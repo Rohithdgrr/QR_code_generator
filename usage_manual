@@ -1,0 +1,26 @@
+QR Code Generator Usage Guide
+Overview
+This tool generates QR codes from text or URLs and saves them as PNG images. It uses the qrcode library with pillow for image processing. The QR codes are configured with low error correction, a standard border, and black-on-white coloring for optimal scanability.
+Setup
+
+Ensure you have Python 3.8+ installed.
+Install dependencies:pip install -r requirements.txt
+
+Running the Tool
+Navigate to the project directory:cd qr_code_generator
+Run the script:python src/qr_code_generator.py
+
+
+
+User Input
+Data: Enter the text or URL to encode in the QR code (e.g., https://grok.com).
+Output Filename: Enter the desired filename for the QR code image (default: qrcode.png).
+
+Output
+The QR code is saved as a PNG image in the current directory with the specified filename.
+Example output: QR code saved as qrcode.png
+
+Troubleshooting
+File Not Saved: Ensure the output directory is writable and the filename has a valid extension (e.g., .png).
+QR Code Not Scannable: Verify the data is valid and try increasing the box_size in the script for larger QR codes.
+Module Not Found: Ensure qrcode and pillow are installed (pip install qrcode pillow).
